@@ -243,3 +243,21 @@ h4{
   margin: 0;
   padding-left:5px;
 }
+
+/*stats*/
+#stats h1{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-family: "Robota",sans-serif;
+  font-weight: lighter!important;
+}
+
+#stats h3{
+  color: #999999;
+  font-weight: bold!important;
+  padding-bottom: -3px;
+}
+
+#stats ul p{
+  color: green;
+}
