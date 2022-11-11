@@ -261,3 +261,20 @@ h4{
 #stats ul p{
   color: green;
 }
+
+#csp h1{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-family: "Robota",sans-serif;
+  font-weight: lighter!important;
+}
+
+#csp p{
+  font-size: 16px;
+  font-weight: 200;
+}
+
+#csp li p{
+  font-size: 15px;
+
+}
