@@ -4,7 +4,10 @@ body{
   line-height: 1.42857143;
   color: #333333;
   background-color: #f0f0f0;
-  /*background-image: url('particles.gif');*/
+  background-image: url('images/gifbg.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .navbar{
