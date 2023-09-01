@@ -1,0 +1,250 @@
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <title>Mohd Zain</title>
+    <link rel="icon" type="image/x-icon" href="ticon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> 
+     
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">
+    <div class="navbar-default" id="navbar"><!-- navbar start-->
+        <div class="container"><!-- container start-->
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="index.html">
+                    <img src="../ticon.png" alt="logo" class="hidden-xs" style="width:50px; height: 50px;"><!-- LOGO-->
+                    <img src="../ticon.png" alt="logo" class="visible-xs" style="width:50px; height:50px;">
+                </a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-align-justify"></i>    
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse" id="navigation"> <!-- navbar start-->
+                <div class="padding-nav"> <!-- padding start-->
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="../index.html">About</a>
+                        </li>
+                
+                        <li>
+                            <a href="../project.html">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="../cv.html">Vitae</a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="csp" style="background-color:white;">
+<div class="container" style="margin-top: 70px; padding-bottom:20px;">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h1>Football Player's Market Value Prediction</h1>
+            <hr class="hr hr-blur" style="background-color:#808080; height:1.5px;">
+            <div class="col-md-12 col-xs-12">
+                <h2>Introduction</h2>
+                <p class="intro">
+                    In recent years, neural networks and deep learning have become popular 
+                    methods for predicting the market value of football players.
+                    In this project Neural Network was implemented on a large dataset of player's 
+                    value of year 2021 that was used to train models that can accurately predict 
+                    the value of a player based on various factors such as age, height, weight, 
+                    stamina, strength, skill moves, work rate, performance, team etc.
+                    With the help of this method, football clubs can make better decisions when it 
+                    comes to buying and selling players.<br>
+
+
+                </p>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Dataset</h2>
+                <p style="font-style: italic; margin-top:-5px; font-size: 14px; padding-left: 1.5px;">Data Analysis</p>
+                <p class="dataset">
+                   Data analysis refers to the process of manipulating raw data to uncover useful insights and draw conclusions.<br>
+                    In this project dataset in taken from recognised platform named Kaggle, 'players_21.csv”.<br>
+                    Dataset here contains some NAN values i.e. some missing values, there are 2 
+                    categorical features as well as 14 numeric features 
+                </p>
+                <p style="font-style: italic; font-size: 20px; padding-left: 2px; color: black;">On describing dataset it shows:</p>
+                <img src="../images/fpmvpImages/dataset.png" class="img-responsive">
+
+                <p style="font-style: italic; margin-top: 15px;font-size: 22px; padding-left: 2px; color: black;">Cleaning of Dataset:</p>
+                <ul>
+                    <li><h4>Outlier Treatment</h4></li>
+                    <p style="margin-top: -4px;"> An outlier is an extremely high or extremely low data point relative to the nearest data point and the rest of the neighbouring.<br>
+                    Outliers are treated by using quantile() method of python.
+                    <img src="../images/fpmvpImages/quantile.png" class="img-responsive">
+                    </p>
+                    <li><h4>Missing Value Treatment</h4></li>
+                    <p style="margin-top: -4px;">
+                        Occur when no data value is stored for the variable in an observation.Here NA vales are treated by the mean of the input feature or median of input features.
+                        <img src="../images/fpmvpImages/missingValue.png" class="img-responsive">
+                    </p>
+                    <li><h4>Categorical Value Treatment</h4></li>
+                    <p style="margin-top: -4px;">
+                        categorical data has values and observations which can be sorted into categories or groups like Gender.
+                        Here Categorical values are treated using dummy variables.
+                        <img src="../images/fpmvpImages/dummy.png" class="img-responsive">
+                    </p>
+                </ul>
+                <p style="font-style: italic; margin-top: 15px;font-size: 22px; padding-left: 2px; color: black;">Scaling of Dataset</p>
+                <p style="margin-top: -4px;">
+                    Scaling of features is an essential step in modelling the algorithms with the datsets. The data obtained contains features of various dimensions and scales altogether. Different scales of the data features affect the modeling of a dataset adversely. Here StandardScalar() function is used for scaling.
+                    <img src="../images/fpmvpImages/scaling.png" class="img-responsive">
+                </p>
+                <p style="font-style: italic; margin-top: 15px;font-size: 22px; padding-left: 2px; color: rgb(12, 0, 0);">Training and Testing of Model</p>
+                <p style="margin-top: -4px;">
+                    Training data is the subset of original data that is used to train the machine learning model, whereas testing data is used to check the accuracy of the model. The training dataset is generally larger in size compared to the testing dataset.<br>
+                </p>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Libraries used in the code</h2>
+                <ul>
+                    <li><p>NumPy</p></li>
+                    <li><p>Pandas</p></li>
+                    <li><p>Sklearn</p></li>
+                    <li><p>Keras</p></li>
+                    <li><p>Matplotlib</p></li>
+                    <li><p>Seaborn</p></li>
+                </ul>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Building a Neural Network <a href="https://github.com/mohdzain98/Football-Player-s-Market_value_Prediction" style="padding-left:2px; padding-up:2px; font-size: 0.73em;" target="_blank"><i class="fa fa-external-link"></i></a></h2>
+                <p style="margin-top: -4px;">
+                    Neural Network is a type of machine learning process, called deep learning, that uses interconnected nodes or neurons in a layered structure that resembles the human brain.<br>
+                    In our Neural Network there is a input layer with 5 nodes with RELU activation function, an hidden layer with 5 nodes with TANH activation function and a output layer.<br>
+                    <img src="../images/fpmvpImages/buildingNN.png" class="img-responsive" style="display: inline;">
+                    <img src="../images/fpmvpImages/nn.png" class="img-responsive" style="height: 300px; width: 300px; display: inline-block;"> <br>
+                    The loss function  Mean Squared error and Adam optimizer is used.
+                </p>
+                <div class="box" >
+                    <p style="font-size: large;">What are RELU,TANH know here --
+                        <input type="button" name="em" class="btn btn-info" data-toggle="collapse" data-target="#em" value="View" /></p>
+                </div>
+                <div class="collapse" id="em">
+                    <div class="box">
+                        <p style="font-weight: bold;">Activation functions</p>
+                        <p>The common problem in most of the learning is how the gradient flows in the network because in some cases gradient is sharp and in some it is slow or even zero. This creates problem in optimal selection techniques for learning parameters.
+                        The Activation functions are designed to overcome issues of gradient like vanishing and exploring of gradient. Activation functions are defined as a function used in ANN to compute the weighted sum of input and biases and is use to decide whether a neuron will get activated or not.
+                        It manipulates the input via. some gradient processes like gradient descent and then produce output for ANN. These activation functions are termed as transfer function. </p>
+                        <p style="font-weight: bold;">ReLU</p>
+                        <p>A rectified linear unit (ReLU) is an activation function that introduces the property of non-linearity to a deep learning model and solves the vanishing gradients issue. It interprets the positive part of its argument. It is one of the most popular activation functions in deep learning. ReLU performs threshold operation to each input element where value is less than 0 are set to 0. The functional form of ReLU is : 
+                        <br><img src="../images/fpmvpImages/relu.png" style="height: 100px; width: 350px;"><br>
+                        The function rectifies the value of the input less than 0 therby forcing them zero and elimination vanishing gradient problem. It has limitation of overfitting that is overcome by dropout technique.
+                        </p>
+                        <p style="font-weight: bold;">TANH</p>
+                        <p>It is a zero centered function whose range lies between -1 to +1. The function is<p style="font-size: large;">f(x) = e^x -e^-x/e^x + e^-x </p>
+                        It gives better training performance for MLP but cannot solve vanishing gradient problem. 
+                        </p>
+                        <p style="font-weight: bold;">Vanishing Gradient</p>
+                        <p>Vanishing gradient problem is a phenomenon that occurs during the training of deep neural networks, where the gradients that are used to update the network become extremely small or "vanish" as they are backpropogated from the output layers to the earlier layers.</p>
+                        <p style="font-weight: bold;">Mean Squared Error Loss Function</p>
+                        <p>The Mean Squared Error measures how close a regression line is to a set of data points. It is a risk function corresponding to the expected value of the squared error loss. Mean square error is calculated by taking the average, specifically the mean, of errors squared from data as it relates to a function</p>
+                    </div>
+                </div>
+                <h4>Predictions</h4>
+                <img src="../images/fpmvpImages/predictions.png" class="img-responsive">
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Conclusions of the results</h2>
+                <p style="font-size:16px; color:#f50c23">
+                    I studied and implemented Artificial Neural Network on 2021 large data of football player's value and NN was found to be impressive to generate results. The table given below shows the difference between actual and predicted values. The line plot between actual and predicted values seems to be linear as we got the accuracy of  94%.<br>
+                    The prediction of model depends on various factor and parameters such as age, height, stamina etc. 
+                  <img src="../images/fpmvpImages/results.png" class="img-responsive">
+                </p>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Link for the code</h2>
+                <a href="https://github.com/mohdzain98/Football-Player-s-Market_value_Prediction" target="_blank" style="font-size:18px;" class="hidden-xs">mohdzain98/Football-Player-s-Market_value_Prediction(:github.com)</a>
+                <a href="https://github.com/mohdzain98/Football-Player-s-Market_value_Prediction" target="_blank" style="font-size:14px;" class="visible-xs">mohdzain98/Football-Player-s-Market_value_Prediction(:github.com)</a>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>References</h2>
+                <ul>
+                    <li>Github Repository</li>
+                    <li> Kaggle for dataset</li>
+                    <li>Sklearn official website</li>
+                    <li><a href="https://keras.io/" target="_blank">keras</a> official website</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../index.html">Main</a></li>
+                    <li><a href="../project.html">Projects</a></li>
+                    <li><a href="../cv.html">Vitae</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-3 col-xs-5">
+            <p>
+                &copy; 2022 Mohd Zain
+            </p>
+        
+            <p class="visible-xs">Powered by Bootstrap
+                <br></p>    
+        </div>
+        <div class="col-md-3">
+            <p class="center hidden-xs">
+                Powered by Bootstrap
+            </p>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <p>
+                Published on : 07 Sep,2022
+            </p>
+            <p class="visible-xs">Updated on : 21 Mar,2023 Version:1.5</p>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <p class="hidden-xs">
+                Updated on : 21 Mar,2023 Version:1.5
+
+            </p>
+            
+        </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+    
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
