@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Roboto",Helvetica,Arial,sans-sarif;
   font-size: 14px;
