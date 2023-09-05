@@ -1,0 +1,235 @@
+<html>
+<head>
+    <title>SkinCancer Detection | Mohd Zain</title>
+    <link rel="icon" type="image/x-icon" href="../ticon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> 
+     
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">
+    <div class="navbar-default" id="navbar"><!-- navbar start-->
+        <div class="container"><!-- container start-->
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="index.html">
+                    <img src="../ticon.png" alt="logo" class="hidden-xs" style="width:50px; height: 50px;"><!-- LOGO-->
+                    <img src="../ticon.png" alt="logo" class="visible-xs" style="width:50px; height:50px;">
+                </a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-align-justify"></i>    
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse" id="navigation"> <!-- navbar start-->
+                <div class="padding-nav"> <!-- padding start-->
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="../index.html">About</a>
+                        </li>
+                
+                        <li>
+                            <a href="../project.html">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="../cv.html">Vitae</a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="csp" style="background-color:white;">
+<div class="container" style="margin-top: 70px; padding-bottom:20px;">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h1>Skin Cancer Detection <a href="https://github.com/mohdzain98/Skin_Cancer_Detection" class="btn btn-primary hidden-xs" style="float: right;" target="_blank">View on Github</a></h1>
+            <a href="https://github.com/mohdzain98/Skin_Cancer_Detection" style="margin-top:5px" class="visible-xs">
+                <button class='btn btn-primary right'>View on Github</button>
+            </a>
+            <hr class="hr hr-blur" style="background-color:#808080; height:1.5px;">
+            <div class="col-md-12 col-xs-12">
+                <h2>Introduction</h2>
+                <p class="intro">
+                    Skin cancer is the most common human malignancy, is primarily diagnosed 
+                    visually, beginning with an initial clinical screening and followed potentially by 
+                    dermoscopic analysis, a biopsy and histopathological examination. Automated 
+                    classification of skin lesions using images is a challenging task owing to the 
+                    fine-grained variability in the appearance of skin lesions.<br>
+
+
+                </p>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Dataset</h2>
+                <p style="font-style: italic; margin-top:-5px; font-size: 14px; padding-left: 1.5px;">Data Analysis</p>
+                <p class="dataset">
+                   Data analysis refers to the process of manipulating raw data to uncover useful insights and draw conclusions.<br>
+                    The dataset is taken from the ISIC (International Skin Image Collaboration) 
+                    Archive. It consists of 1800 pictures of benign moles and 1497 pictures of 
+                    malignant classified moles. The pictures have all been resized to low resolution 
+                    (224x224x3) RGB. The task of this kernel is to create a model, which can 
+                    classify a mole visually into benign and malignant.
+                    As the dataset is pretty balanced, the model will be tested on the accuracy 
+                    score, thus (TP + TN)/(ALL).<br>
+                    It has 2 different classes of skin cancer which are listed below :
+                    <ol>
+                        <li>Benign</li>
+                        <li>Malignant</li>
+                    </ol>
+                </p>
+                <p style="font-style: italic; font-size: 20px; padding-left: 2px; color: black;">Some images that dataset have</p>
+                <img src="../images/scp/dataset.png" class="img-responsive">
+
+                
+                <p style="font-style: italic; margin-top: 15px;font-size: 22px; padding-left: 2px; color: rgb(12, 0, 0);">Training and Testing of Model</p>
+                <p style="margin-top: -4px;">
+                    Training data is the subset of original data that is used to train the machine learning model, whereas testing data is used to check the accuracy of the model. The training dataset is generally larger in size compared to the testing dataset.<br>
+                </p>
+                <img src="../images/scp/tt.png" class="img-responsive">
+                <img src="../images/scp/tt2.png" class="img-responsive">
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Libraries used in the code</h2>
+                <ul>
+                    <li><p>NumPy</p></li>
+                    <li><p>Pandas</p></li>
+                    <li><p>Sklearn</p></li>
+                    <li><p>Keras</p></li>
+                    <li><p>Tensorflow</p></li>
+                    <li><p>Matplotlib</p></li>
+                    <li><p>Seaborn</p></li>
+                </ul>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Building a Convolutional Neural Network <a href="https://github.com/mohdzain98/Skin_Cancer_Detection" style="padding-left:2px; padding-up:2px; font-size: 0.73em;" target="_blank"><i class="fa fa-external-link"></i></a></h2>
+                    <img src="../images/scp/cnn.png" class="img-responsive" style="display:inline;">
+                    <h4>Convolution Layer</h4>
+                    <img src="../images/scp/model.png" class="img-responsive" style="float:right;">
+                    <p>As the image data progresses through the layers of the CNN, it starts to recognize larger elements or shapes of the object until it finally identifies the intended object. The convolutional layer is the core building block of a CNN, and it is where the majority of computation occurs.</p>
+                    <h4>Pooling Layer</h4>
+                    <p>It is similar to the convolution layer but instead of taking a dot product between the input and the kernel we take the max of the region from the input overlapped by the kernel.</p>
+                    <h4>Fully connected layer</h4>
+                    <p>The Fully Connected (FC) layer consists of the weights and biases along with the neurons and is used to connect the neurons between two different layers. These layers are usually placed before the output layer and form the last few layers of a CNN Architecture.</p>
+                    <img src="../images/scp/bmo.png" class="img-responsive">
+                <h3>Fitting the model</h3>
+                    <img src="../images/scp/fitting.png" class="img-responsive">
+                <div class="box" >
+                    <p style="font-size: large;">Some definitions
+                    <input type="button" name="em" class="btn btn-info" data-toggle="collapse" data-target="#em" value="View"  /></p>
+                </div>
+                <div class="collapse" id="em">
+                    <div class="box">
+                        <p style="font-weight: bold;">Activation functions</p>
+                        <p>The common problem in most of the learning is how the gradient flows in the network because in some cases gradient is sharp and in some it is slow or even zero. This creates problem in optimal selection techniques for learning parameters.
+                        The Activation functions are designed to overcome issues of gradient like vanishing and exploring of gradient. Activation functions are defined as a function used in ANN to compute the weighted sum of input and biases and is use to decide whether a neuron will get activated or not.
+                        It manipulates the input via. some gradient processes like gradient descent and then produce output for ANN. These activation functions are termed as transfer function. </p>
+                        <p style="font-weight: bold;">ReLU</p>
+                        <p>A rectified linear unit (ReLU) is an activation function that introduces the property of non-linearity to a deep learning model and solves the vanishing gradients issue. It interprets the positive part of its argument. It is one of the most popular activation functions in deep learning. ReLU performs threshold operation to each input element where value is less than 0 are set to 0. The functional form of ReLU is : 
+                        <br><img src="../images/fpmvpImages/relu.png" style="height: 100px; width: 350px;"><br>
+                        The function rectifies the value of the input less than 0 therby forcing them zero and elimination vanishing gradient problem. It has limitation of overfitting that is overcome by dropout technique.
+                        </p>
+                        
+                    </div>
+                </div>
+                <h4>Predictions</h4>
+                <img src="../images/scp/predictions.png" class="img-responsive">
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Conclusions of the results</h2>
+                <p style="font-size:16px; color:#f50c23">  
+                  We can conclude that from the given images in the dataset our model was trained on the training images and tested on testing images and given the impressive results.
+                </p>
+                <img src="../images/scp/conclusions.png" class="img-responsive" style="display: inline;">
+                <img src="../images/scp/cm.png" class="img-responsive" style="display: inline;">
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Link for the code</h2>
+                <a href="https://github.com/mohdzain98/Skin_Cancer_Detection" target="_blank" style="font-size:18px;" class="hidden-xs">mohdzain98/Skin_cancer_detection(:github.com)</a>
+                <a href="https://github.com/mohdzain98/Skin_Cancer_Detection" target="_blank" style="font-size:14px;" class="visible-xs">mohdzain98/Skin_cancer_detection(:github.com)</a>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>References</h2>
+                <ul>
+                    <li>Github Repository</li>
+                    <li>ISIC website for dataset</li>
+                    <li>Sklearn official website</li>
+                    <li><a href="https://keras.io/" target="_blank">keras</a> official website</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../index.html">Main</a></li>
+                    <li><a href="../project.html">Projects</a></li>
+                    <li><a href="../cv.html">Vitae</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-3 col-xs-5">
+            <p>
+                &copy; 2022 Mohd Zain
+            </p>
+        
+            <p class="visible-xs">Powered by Bootstrap
+                <br></p>    
+        </div>
+        <div class="col-md-3">
+            <p class="center hidden-xs">
+                Powered by Bootstrap
+            </p>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <p>
+                Published on : 07 Sep,2022
+            </p>
+            <p class="visible-xs">Updated on : 01 sep,2023 Version:1.7</p>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <p class="hidden-xs">
+                Updated on : 01 sep,2023 Version:1.7
+
+            </p>
+            
+        </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+    
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
