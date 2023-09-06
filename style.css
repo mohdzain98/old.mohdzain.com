@@ -17,6 +17,11 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+@media (min-width: 640px) { 
+  #csp p{
+    font-weight: bold;
+  }
+}
 
 .navbar{
   background: black;
