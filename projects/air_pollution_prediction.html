@@ -1,0 +1,245 @@
+<html>
+<head>
+    <title>Air Pollution Prediction | Mohd Zain</title>
+    <link rel="icon" type="image/x-icon" href="../ticon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"> 
+     
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+
+</head>
+<body>
+
+<nav class="navbar navbar-fixed-top">
+    <div class="navbar-default" id="navbar"><!-- navbar start-->
+        <div class="container"><!-- container start-->
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="index.html">
+                    <img src="../ticon.png" alt="logo" class="hidden-xs" style="width:50px; height: 50px;"><!-- LOGO-->
+                    <img src="../ticon.png" alt="logo" class="visible-xs" style="width:50px; height:50px;">
+                </a>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <i class="fa fa-align-justify"></i>    
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse" id="navigation"> <!-- navbar start-->
+                <div class="padding-nav"> <!-- padding start-->
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            <a href="../index.html">About</a>
+                        </li>
+                
+                        <li>
+                            <a href="../project.html">Projects</a>
+                        </li>
+
+                        <li>
+                            <a href="../cv.html">Vitae</a>
+                        </li>
+                        
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="csp" style="background-color:white;">
+<div class="container" style="margin-top: 70px; padding-bottom:20px;">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <h1>Air Pollution Prediction <a href="https://github.com/mohdzain98/Air_Pollution_Prediction" class="btn btn-primary hidden-xs" style="float: right;" target="_blank">View on Github</a></h1>
+            <a href="https://github.com/mohdzain98/Air_Pollution_Prediction" style="margin-top:5px" class="visible-xs">
+                <button class='btn btn-primary right'>View on Github</button>
+            </a>
+            <hr class="hr hr-blur" style="background-color:#808080; height:1.5px;">
+            <div class="col-md-12 col-xs-12">
+                <h2>Introduction</h2>
+                <p class="intro">
+                    Over the past few decades, due to human activities, industrialization, and 
+                    urbanization, air pollution has become a life-threatening factor in many 
+                    countries around the world. Among air pollutants, Particulate Matter with a
+                    diameter of less than 2.5μm (PM2.5) is a serious health problem.
+                    This project aims to study the pollutant in the air of a city and try to predicts 
+                    the pollution
+                </p>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Dataset</h2>
+                <p style="font-style: italic; margin-top:-5px; font-size: 14px; padding-left: 1.5px;">Data Analysis</p>
+                <p class="dataset">
+                   Data analysis refers to the process of manipulating raw data to uncover useful insights and draw conclusions.
+                    In this project dataset in taken from recognised platform named Kaggle, 'LSTM-Multivariate_pollution.csv'.
+                    
+                </p>
+                <p style="font-style: italic; font-size: 20px; padding-left: 2px; color: black;">On describing dataset it shows:</p>
+                <img src="../images/app/dataset.png" class="img-responsive">
+
+                <p style="font-style: italic; margin-top: 15px;font-size: 22px; padding-left: 2px; color: black;">Scaling of Dataset</p>
+                <p style="margin-top: -4px;">
+                    Scaling of features is an essential step in modelling the algorithms with the datsets. The data obtained contains features of various dimensions and scales altogether. Different scales of the data features affect the modeling of a dataset adversely. Here MinMaxScaler() function is used for scaling.
+                </p>
+                <img src="../images/app/sc1.png" class="img-responsive" style="display: inline;">
+                <img src="../images/app/sc2.png" class="img-responsive" style="display: inline;">
+
+                <p style="font-style: italic; margin-top: 15px;font-size: 22px; padding-left: 2px; color: rgb(12, 0, 0);">Training and Testing of Model</p>
+                <p style="margin-top: -4px;">
+                    Training data is the subset of original data that is used to train the machine learning model, whereas testing data is used to check the accuracy of the model. The training dataset is generally larger in size compared to the testing dataset.
+                </p><br>
+                <p>Training data shape : 23153</p><p>Testing Data Shape : 6834</p>
+
+                <img src="../images/app/traintest.png" class="img-responsive">
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Libraries used in the code</h2>
+                <ul>
+                    <li><p>NumPy</p></li>
+                    <li><p>Pandas</p></li>
+                    <li><p>Keras</p></li>
+                    <li><p>Tensorflow</p></li>
+                    <li><p>Sklearn</p></li>
+                    <li><p>Seaborn</p></li>
+                </ul>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Building a Recurrent Neural Network <a href="https://github.com/mohdzain98/Air_Pollution_Prediction" style="padding-left:2px; padding-up:2px; font-size: 0.73em;" target="_blank"><i class="fa fa-external-link"></i></a></h2>
+                <p style="margin-top: -4px;">LSTM is used for RNN</p>
+                <p>LSTM stands for long short-term memory networks, used in the field of Deep 
+                Learning. It is a variety of recurrent neural networks (RNNs) that are capable of 
+                learning long-term dependencies, especially in sequence prediction problems.</p>
+                <p>LSTM is a  higher memory power to remember the outputs of each node for a more extended period to produce the outcome for the next node efficiently. LSTM networks combat the RNN's vanishing gradients. </p>
+                <img src="../images/app/lstm.png" class="img-responsive" style="display: inline; height: 400px; width: 600px;">
+                <img src="../images/app/rnn.png" class="img-responsive" style="display: inline; border: ridge 2px; padding : 10px 10px 10px 10px;">
+                <p style="margin-top: 0px;">Left : LSTM Architecture Right : RNN Architecture</p>
+                </br>
+                <strong>Cell State : </strong><p>The Main concept of LSTM is cell state. Cell state can act as a transport highway that transport the relative information along the sequence chain. Also cell state can be considered as a kind of long term memory that detains atleast part of the information of earlier states by using combination of partial forgetting and increment operations on previous state. This information is added or removed from cell states via some gates.</p>
+                <strong>Gates : </strong><p>The gates are different neural network that decides which informtation is allowed to which gates.</p>
+                <strong>Forget Gate : </strong><p>This gate decides what information should be kept or throw away. Information from the previous hidden state and current input state is pass through sigmoid function values about 0 and 1.</p>
+                <strong>Input Gate : </strong><p>This is required to update cell state. The value of the previous hidden state and current input is passed through a sigmoid funtion. It decides whihc value is important and which is not.</p>
+                <strong>New Cell State : </strong><p>The cell state gets element wise multiplication by forget gate first then the input from the input gate and performs element wise addition.</p>
+                <strong>Ouput Gate : </strong><p>This is the last gate, which decides what information should be moved formward.</p>
+                <p>First the previous hidden state and the current input pass into the sigmoid function and the newly modified cell state is pass to tanh function. The tanh output is multiplied with sigmoid output to decide what information the hidden should carry. The new cell state & the new hidden state is then passed to the next time stamp.</p>
+                <img src="../images/app/building.png" class="img-responsive" style="display: inline;">
+                <img src="../images/app/fitting.png" class="img-responsive">
+                <br>
+                <div class="box" >
+                    <p style="font-size: large;">What are RELU, Tanh know here --
+                        <input type="button" name="em" class="btn btn-info" data-toggle="collapse" data-target="#em" value="View"  /></p>
+                </div>
+                <div class="collapse" id="em">
+                    <div class="box">
+                        <p style="font-weight: bold;">Activation functions</p>
+                        <p>The common problem in most of the learning is how the gradient flows in the network because in some cases gradient is sharp and in some it is slow or even zero. This creates problem in optimal selection techniques for learning parameters.
+                        The Activation functions are designed to overcome issues of gradient like vanishing and exploring of gradient. Activation functions are defined as a function used in ANN to compute the weighted sum of input and biases and is use to decide whether a neuron will get activated or not.
+                        It manipulates the input via. some gradient processes like gradient descent and then produce output for ANN. These activation functions are termed as transfer function. </p>
+                        <p style="font-weight: bold;">ReLU</p>
+                        <p>A rectified linear unit (ReLU) is an activation function that introduces the property of non-linearity to a deep learning model and solves the vanishing gradients issue. It interprets the positive part of its argument. It is one of the most popular activation functions in deep learning. ReLU performs threshold operation to each input element where value is less than 0 are set to 0. The functional form of ReLU is : 
+                        <br><img src="../images/fpmvpImages/relu.png" style="height: 100px; width: 350px;"><br>
+                        The function rectifies the value of the input less than 0 therby forcing them zero and elimination vanishing gradient problem. It has limitation of overfitting that is overcome by dropout technique.
+                        </p>
+                        <p style="font-weight: bold;">TANH</p>
+                        <p>It is a zero centered function whose range lies between -1 to +1. The function is</p>
+                        <p style="font-size: large;">f(x) = e^x -e^-x/e^x + e^-x </p>
+                        <p>
+                            It gives better training performance for MLP but cannot solve vanishing gradient problem. 
+                        </p>
+                    </div>
+                </div>
+                <h4>Predictions</h4>
+                <img src="../images/app/predict1.png" class="img-responsive">
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Conclusions of the results</h2>
+                <p style="font-size:16px; color:#f50c23">
+                     Test Values and Predicted values plot are quite same as we have got 93.28% accuracy in prediction.
+                </p>
+                <img src="../images/app/results.png" class="img-responsive">
+                <img src="../images/app/testplot.png" class="img-responsive" style="display: inline; height:400px; width:530px;">
+                <img src="../images/app/predplot.png" class="img-responsive" style="display: inline; height:410px; width:530px;">
+                <p style="margin-top: 0px;">Left : Test values plot Right : Predicted values plot</p>
+
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>Link of the Notebook</h2>
+                <a href="https://github.com/mohdzain98/Air_Pollution_Prediction" target="_blank" style="font-size:18px;" class="hidden-xs">mohdzain98/Air_Pollution_Prediction(:github.com)</a>
+                <a href="https://github.com/mohdzain98/Air_Pollution_Prediction" target="_blank" style="font-size:14px;" class="visible-xs">mohdzain98/Air_Pollution_Prediction(:github.com)</a>
+                <hr class="hr hr-blur" style="background-color:#e0e0e0; height:1px;">
+                <h2>References</h2>
+                <ul>
+                    <li>Github Repository</li>
+                    <li> Kaggle for dataset</li>
+                    <li>Sklearn official website</li>
+                </ul>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="../index.html">Main</a></li>
+                    <li><a href="../project.html">Projects</a></li>
+                    <li><a href="../cv.html">Vitae</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div id="copyright">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-3 col-xs-5">
+            <p>
+                &copy; 2022 Mohd Zain
+            </p>
+        
+            <p class="visible-xs">Powered by Bootstrap
+                <br></p>    
+        </div>
+        <div class="col-md-3">
+            <p class="center hidden-xs">
+                Powered by Bootstrap
+            </p>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <p>
+                Published on : 07 Sep,2022
+            </p>
+            <p class="visible-xs">Updated on : 01 sep,2023 Version:1.7</p>
+        </div>
+        <div class="col-md-3 col-xs-6">
+            <p class="hidden-xs">
+                Updated on : 01 sep,2023 Version:1.7
+
+            </p>
+            
+        </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+    
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+</html>
