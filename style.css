@@ -5,6 +5,7 @@ html{
   scroll-behavior: smooth;
 }
 
+
 body{
   font-family: "Roboto",Helvetica,Arial,sans-sarif;
   font-size: 14px;
@@ -63,6 +64,11 @@ body{
 .navbar-collapse ul.nav > li > a:hover{
   background: #e7e7e7;
 
+}
+#slider{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  size: 500px;
 }
 
 .box{
