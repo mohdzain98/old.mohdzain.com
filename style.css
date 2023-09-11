@@ -77,6 +77,7 @@ body{
   margin-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  border-radius: 15px;
 }
 
 .box .box-header{
@@ -85,6 +86,7 @@ body{
   padding: 5px;
   border-bottom: solid 1px #eeeeee; 
   margin-top: 0px;
+  border-radius: 10px;
 }
 
 
@@ -113,13 +115,16 @@ h3{
   word-spacing: 5px;
   letter-spacing: 3px;
   margin-bottom: 20px;
-  /*text-transform: uppercase;*/
-  font-weight: lighter;
+  /*font-weight: lighter;*/
 }
 h4{
   font-weight: bold;
 }
 
+#pcontainer a{
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
 .colorchange{
   animation: colorhand 1s infinite;
 }
