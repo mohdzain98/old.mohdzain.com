@@ -1,0 +1,19 @@
+<div>
+	<script type="text/javascript">
+	var currentUrl = window.location.search;
+	var urlParams = new URLSearchParams(currentUrl);
+	var id = urlParams.get('id');
+	if (id != null) {
+	    yourFunction(id);
+	}
+	function yourFunction(id) {
+	   if(id=="udemy"){
+	   	window.open("https://www.udemy.com/certificate/UC-f04d40bc-f3cf-41d6-b059-58f93bdec1ac/",'_SELF');
+	   }
+	   else{
+	   	alert("Id not found");
+	   	window.open("https://mohdzain.com/");
+	   }
+	}
+</script>
+</div>
