@@ -1,6 +1,7 @@
-/* body{
-  background-image: linear-gradient(120deg, #e8eeee 0%, #cbd1d0 100%);
-} */
+body{
+   background-color: #f9fcff;
+  /* background-image: linear-gradient(147deg, #f9fcff 0%, #c0f3b6 38%, #b2f1ee 67%, pink 100%);  */
+} 
 
 #show {
   display: flex;
