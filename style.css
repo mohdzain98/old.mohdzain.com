@@ -78,6 +78,7 @@ body{
 }
 
 .box .box-header{
+  width:500px;
   background: transparent;
   margin: -10px 5px 20px;
   padding: 5px;
