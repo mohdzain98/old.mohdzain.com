@@ -8,6 +8,14 @@ const repo = {
     url: "https://github.com/mohdzain98/Alarm_Clock"
   },
   2: {
+    name: "Text Utils",
+    lang: "JavaScript",
+    visible: "Public",
+    color: "orange",
+    define: "A Text utility made with React",
+    url: "https://github.com/mohdzain98/textutils"
+  },
+  3: {
     name: "pennrangers",
     lang: "HTML",
     visible: "Public",
@@ -15,7 +23,7 @@ const repo = {
     define: "Clash of Clans webpage to display clans stats",
     url: "https://github.com/mohdzain98/pennrangers"
   },
-  3: {
+  4: {
     name: "cocwl",
     lang: "PHP",
     visible: "Public",
@@ -23,7 +31,7 @@ const repo = {
     define: "Clash of clans Clan Wars Database Management System",
     url: "https://github.com/mohdzain98/cocwl"
   },
-  4: {
+  5: {
     name: "chatApplication",
     lang: "Java",
     visible: "Public",
@@ -31,7 +39,7 @@ const repo = {
     define: "Chat Appliaction using Socket Programming",
     url: "https://github.com/mohdzain98/ChatApplication"
   },
-  5: {
+  6: {
     name: "Color_Images_Encryption",
     lang: "Python",
     visible: "Public",
@@ -39,7 +47,7 @@ const repo = {
     define: "DNA Based color images encryption",
     url: "https://github.com/mohdzain98/Design_of_DNA_based_Color_Images_Cryptosystem"
   },
-  6: {
+  7: {
     name: "JavaPython-Integration",
     lang: "Java",
     visible: "Public",
