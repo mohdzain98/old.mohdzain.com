@@ -7,7 +7,7 @@ const projects = [
         "status":"",
         "links":{
             details:"",
-            live:"",
+            live:"https://noteswift-pi.vercel.app/",
             github:"https://github.com/mohdzain98/noteswift"
         }
     },
