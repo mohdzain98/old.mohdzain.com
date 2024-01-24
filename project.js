@@ -4,7 +4,7 @@ const projects = [
         "title":"NoteSwift",
         "area":"Web Development Using MongoDB, Express.js, React, Node.js",
         "Description":"Developed a full stack web app to save the notes of users on the web which can be accessed from anywhere. Implemented secure user authentication through JWT, ensuring data integrity and user privacy.",
-        "status":"",
+        "status":"Vercel",
         "links":{
             details:"",
             live:"https://noteswift-pi.vercel.app/",
