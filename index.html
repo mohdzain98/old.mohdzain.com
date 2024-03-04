@@ -11,6 +11,7 @@
     <link rel="icon" type="image/x-icon" href="ticon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' api.ipinfo.io"> -->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -108,8 +109,8 @@
                     <p class="p2">I have completed my B.Tech in Computer Science and Engineering from Uttarakhand Technical University. </p>
                     <p class="p2">Completed my Intermediate from St Mary's School, ISC Board.</p>
                     <p class="p2">Appeared in GATE 2022, Secured AIR 1579.</p>
-                    <p class="p2">I have three <span style="color: red;">LIVE</span>
-                        <a href="project.html" target="_SELF">projects</a> hosted on AWS, Vercel and Webhost by Hostinger respectively.</p>
+                    <!-- <p class="p2">I have three <span style="color: red;">LIVE</span>
+                        <a href="project.html" target="_SELF">projects</a> hosted on AWS, Vercel and Webhost by Hostinger respectively.</p> -->
 
                     <div class="col-md-6 col-xs-12">
                         <h4 style="padding-left:15px; margin-top: 15px; margin-bottom:-5px;" >Semester 3:</h4>
@@ -226,7 +227,7 @@
 <div id="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <h4>Pages</h4>
                 <ul>
                     <li><a href="index.html">Main</a></li>
@@ -235,17 +236,23 @@
                 </ul>
                 <hr class="hidden-md hidden-lg hidden-sm">
             </div>
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-3 col-sm-6">
                 <h4>Developed by</h4>
                 <a href="stats.html" data-toggle="tooltip" title="thanks!">Mohd Zain</a>
                 <hr class="hidden-md hidden-lg hidden-sm">
             </div>
-            <div class="col-md-4 col-sm-6" >
+            <div class="col-md-3 col-sm-6" >
                 <h4>Credits</h4>
                 <ul>
                     <li><p>CSS Styling:Bootstrap</p></li>
                     <li><p>Logo:</h5>MS Paint<p></li>
                 </ul>
+                <hr class="hidden-md hidden-lg hidden-sm">
+            </div>
+            <div class="col-md-3">
+                <h5 id="city" style="display: inline;"></h5>
+                <p id="temp" style="display: inline;"></p>
+
             </div>
         </div>
         
