@@ -1,51 +1,14 @@
 const projects = [
     {
-        "id" : "noteswift",
-        "title":"NoteSwift",
-        "area":"Web Development Using MongoDB, Express.js, React, Node.js",
-        "Description":"Developed a full stack web app to save the notes of users on the web which can be accessed from anywhere. Implemented secure user authentication through JWT, ensuring data integrity and user privacy.",
-        "status":"Vercel",
-        "links":{
-            details:"",
-            live:"https://noteswift-pi.vercel.app/",
-            github:"https://github.com/mohdzain98/noteswift"
-        }
-    },
-    {
         "id" : "newslookup",
         "title":"NewsLookup",
-        "area":"Web Development Using React",
-        "Description":"Developed a React-based news web application that retrieves news from a News API and displays it in many categories, including sports, health, science, and top stories.",
+        "area":"Web Development Using React and Machine Learning",
+        "Description":"Developed a News App that not only delivers the latest updates from a dynamic news API but also employs a Machine Learning algorithm to conduct Semantic Analysis for categorization of news headlines into healthy and Unhealthy news to read",
         "status":"",
         "links":{
             details:"",
             live:"",
             github:"https://github.com/mohdzain98/newslookup"
-        }
-    },
-    {
-        "id" : "techbooks",
-        "title":"Techbooks Website",
-        "area":"Web Development Using HTML, CSS, Java Server Pages (JSP), MySQL",
-        "Description":"Simple book website that lists the recommended books for all subjects in the engineering disciplines CSE, ECE, EE, MECH, and CIVIL.<br>It will also include links to buy the respective book from Amazon and Flipcart.",
-        "status":"AWS",
-        "links":{
-            details:"",
-            live:"http://13.234.222.68:8080/techbook/",
-            github:"https://github.com/mohdzain98/techbooks"
-        }
-    },
-    {
-        "id" : "bracketsbay",
-        "title":"Curtain Brackets E-Commerce Business Website",
-        "area":"Web Development Using HTML, CSS, PHP, MySQL",
-        "Description":"I have conceptualized, designed, and launched an e-commerce website specializing in curtain brackets. This online platform showcases an extensive range of premium curtain bracket solutions, catering to diverse customer needs and design preferences"
-        +"The website combines sleek design with user-friendly navigation, ensuring a seamless shopping experience for visitors",
-        "status":"000webhost by Hostinger",
-        "links":{
-            details:"",
-            live:"https://bracktesbay.000webhostapp.com/",
-            github:"https://github.com/mohdzain98/bracketsbay"
         }
     },
     {
@@ -119,6 +82,43 @@ const projects = [
             details:"projects/cars_sales_prediction.html",
             live:"",
             github:"https://github.com/mohdzain98/Car_Sales_Prediciton"
+        }
+    },
+    {
+        "id" : "noteswift",
+        "title":"NoteSwift",
+        "area":"Web Development Using MongoDB, Express.js, React, Node.js",
+        "Description":"Developed a full stack web app to save the notes of users on the web which can be accessed from anywhere. Implemented secure user authentication through JWT, ensuring data integrity and user privacy.",
+        "status":"Vercel",
+        "links":{
+            details:"",
+            live:"https://noteswift-pi.vercel.app/",
+            github:"https://github.com/mohdzain98/noteswift"
+        }
+    },
+    {
+        "id" : "techbooks",
+        "title":"Techbooks Website",
+        "area":"Web Development Using HTML, CSS, Java Server Pages (JSP), MySQL",
+        "Description":"Simple book website that lists the recommended books for all subjects in the engineering disciplines CSE, ECE, EE, MECH, and CIVIL.<br>It will also include links to buy the respective book from Amazon and Flipcart.",
+        "status":"AWS",
+        "links":{
+            details:"",
+            live:"http://13.234.222.68:8080/techbook/",
+            github:"https://github.com/mohdzain98/techbooks"
+        }
+    },
+    {
+        "id" : "bracketsbay",
+        "title":"Curtain Brackets E-Commerce Business Website",
+        "area":"Web Development Using HTML, CSS, PHP, MySQL",
+        "Description":"I have conceptualized, designed, and launched an e-commerce website specializing in curtain brackets. This online platform showcases an extensive range of premium curtain bracket solutions, catering to diverse customer needs and design preferences"
+        +"The website combines sleek design with user-friendly navigation, ensuring a seamless shopping experience for visitors",
+        "status":"000webhost by Hostinger",
+        "links":{
+            details:"",
+            live:"https://bracktesbay.000webhostapp.com/",
+            github:"https://github.com/mohdzain98/bracketsbay"
         }
     },
     {
