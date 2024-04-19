@@ -101,10 +101,10 @@ const projects = [
         "title":"Techbooks Website",
         "area":"Web Development Using HTML, CSS, Java Server Pages (JSP), MySQL",
         "Description":"Simple book website that lists the recommended books for all subjects in the engineering disciplines CSE, ECE, EE, MECH, and CIVIL.<br>It will also include links to buy the respective book from Amazon and Flipcart.",
-        "status":"AWS",
+        "status":"",
         "links":{
             details:"",
-            live:"http://13.234.222.68:8080/techbook/",
+            live:"",
             github:"https://github.com/mohdzain98/techbooks"
         }
     },
