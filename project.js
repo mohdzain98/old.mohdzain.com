@@ -1,5 +1,17 @@
 const projects = [
     {
+        "id":"docschat",
+        "title":"Docschat",
+        "area":"LLM based Web App",
+        "Description":"Docschat is an innovative project designed to revolutionize how users interact with documents. By leveraging the power of Large Language Models (LLMs), Docschat enables intuitive, conversational interactions with documents, making information retrieval and understanding more accessible and efficient.<br> <strong>Functionality</strong> <br> <ul> <li> PDF and TXT Files: Extract and interact with text content efficiently.</li> <br> <li>CSV and Excel Files: Perform statistical calculations and data analysis.</li> <br> <li>SQL Files: Write and execute queries to retrieve and manipulate data, providing desired results.</li></ul>",
+        "status":"Dedicated Server",
+        "links":{
+            details:"",
+            live:"https://docschat.in",
+            github:"https://github.com/mohdzain98/docschat"
+        }
+    },
+    {
         "id" : "newslookup",
         "title":"NewsLookup",
         "area":"Web Development Using React and Machine Learning",
