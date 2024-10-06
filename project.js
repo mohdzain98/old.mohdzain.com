@@ -12,6 +12,18 @@ const projects = [
         }
     },
     {
+        "id":'surfmind',
+        "title":'SurfMind',
+        "area":'LLM based Chrome Extension',
+        'Description':'SurfMind is a cutting-edge Chrome extension designed to enhance your browsing experience by intelligently tracking and managing the websites you visit',
+        'status':'Dedicated Server',
+        "links":{
+            details:"",
+            live:"https://chromewebstore.google.com/detail/surfmind/ladckalplikfcplbihpgfnlkonnpehkj",
+            github:"https://github.com/mohdzain98/surfmind"
+        }
+    },
+    {
         "id" : "newslookup",
         "title":"NewsLookup",
         "area":"Web Development Using React and Machine Learning",
